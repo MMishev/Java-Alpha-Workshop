@@ -9,4 +9,7 @@ public class Application {
         this.name = "Slack";
         this.channels = new ArrayList<>();
     }
+    public void createChannel(Channel channel){
+        channels.add(new Channel(channel.name));
+    }
 }
