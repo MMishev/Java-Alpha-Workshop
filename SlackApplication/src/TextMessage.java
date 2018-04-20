@@ -1,7 +1,8 @@
 public class TextMessage extends Message implements Likeable {
-
-    public TextMessage(String content) {
-        super(content);
+    int likesCount;
+    public TextMessage(Author author,String content) {
+        super(author,content);
+        likesCount = 0;
     }
 
     @Override
