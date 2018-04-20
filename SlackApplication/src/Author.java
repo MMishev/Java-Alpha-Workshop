@@ -9,4 +9,8 @@ public class Author {
         this.name = name;
         this.messages = new ArrayList<>();
     }
+    @Override
+    public String toString(){
+        return name;
+    }
 }

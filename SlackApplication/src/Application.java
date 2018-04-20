@@ -32,10 +32,13 @@ public class Application {
             currentChannel = channels.get(channels.indexOf(temp));
         }
     }
-
     public void getChannels() {
         for (Channel channel : channels) {
             System.out.println(channel);
         }
+    }
+
+    public void postMessage(Message message){
+        currentChannel.messages.add(message);
     }
 }

@@ -20,4 +20,9 @@ public class Channel {
         }
         return false;
     }
+    public void getMessages(){
+        for (Message message : messages){
+            System.out.println(message);
+        }
+    }
 }

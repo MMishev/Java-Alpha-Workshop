@@ -1,7 +1,8 @@
 public class ImageMessage extends Message implements Accessible {
-
-    public ImageMessage(String content) {
-        super(content);
+    int likesCount;
+    public ImageMessage(Author author,String content) {
+        super(author,content);
+        likesCount = 0;
     }
 
     @Override

@@ -1,6 +1,10 @@
-public class FileMesssage extends Message {
-    public FileMesssage(String content) {
-        super(content);
+public class FileMesssage extends Message implements Downloadable{
+    public FileMesssage(Author author,String content) {
+        super(author,content);
     }
 
+    @Override
+    public void download() {
+
+    }
 }
