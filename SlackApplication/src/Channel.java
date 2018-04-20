@@ -9,4 +9,15 @@ public class Channel {
         this.name = name;
         this.messages = new ArrayList<>();
     }
+    @Override
+    public String toString(){
+       return name;
+    }
+    @Override
+    public boolean equals(Object object){
+        if(object.toString() == name){
+            return true;
+        }
+        return false;
+    }
 }
